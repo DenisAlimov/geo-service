@@ -13,11 +13,12 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class LocalizationServiceImplTest {
 
-    LocalizationServiceImpl loc = new LocalizationServiceImpl();
+    LocalizationServiceImpl loc;
     public static int i = 1;
 
     @BeforeEach
     public void startMsg() {
+        loc = new LocalizationServiceImpl();
         System.out.println("Test " + i + " started");
     }
 

@@ -9,11 +9,12 @@ import ru.netology.geo.GeoServiceImpl;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class GeoServiceImplTest {
-    GeoServiceImpl geo = new GeoServiceImpl();
     public static int i = 1;
+    GeoServiceImpl geo;
 
     @BeforeEach
     public void startMsg() {
+        geo = new GeoServiceImpl();
         System.out.println("Test " + i + " started");
     }
 
